@@ -39,6 +39,9 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License"
 ]
 
+[tool.poetry.plugins."protocol_proxy.manifests"]
+nats = "protocol_proxy.protocol.nats:proxy.toml"
+
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
 nats-py = ">=2.11.0"

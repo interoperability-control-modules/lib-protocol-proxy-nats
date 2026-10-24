@@ -68,9 +68,6 @@ class NATSProxy(AsyncioProtocolProxy):
     def topic_delimiter() -> str:
         return '.'
 
-    @classmethod
-    def get_unique_remote_id(cls, unique_remote_id: tuple) -> tuple:
-        return unique_remote_id
 
     ##################
     # Server connection
